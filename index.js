@@ -21,7 +21,7 @@ function increaseRankBy(n){
   
   
   for(var i = 0; i < allLi.length; i++){
-    allUL[i].innerHTML += n
+    allLi[i].innerHTML += n
   }
   return allUL
 }
