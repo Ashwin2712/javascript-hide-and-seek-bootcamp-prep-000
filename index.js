@@ -20,7 +20,7 @@ function increaseRankBy(n){
   var allLi = document.querySelectorAll('.ranked-list li')
   
   
-  for(var i = 0; i < allUL.length; i++){
+  for(var i = 0; i < allLi.length; i++){
     allUL[i].innerHTML += n
   }
   return allUL
