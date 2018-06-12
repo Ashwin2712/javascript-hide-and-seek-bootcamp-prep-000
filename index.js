@@ -20,8 +20,10 @@ function increaseRankBy(n){
   var allLi = document.querySelectorAll('.ranked-list li')
   
   for(var i = 0; i < allLi.length; i++){
-    var liInrHTML = parseFloat(allLi[i].innerHTML)
-    liInrHTML += parseFloat(n)
+    var liInrHTML = parseInt(allLi[i].innerHTML, 10)
+    //liInrHTML += parseInt(n, 10)
+    
+    parseInt(liInrHTML, 10) += parseInt(n, 10)
   }
   return allLi
 }
