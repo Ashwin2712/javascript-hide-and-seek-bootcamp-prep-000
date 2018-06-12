@@ -23,7 +23,7 @@ function increaseRankBy(n){
     var liInrHTML = parseInt(allLi[i].innerHTML, 10)
     //liInrHTML += parseInt(n, 10)
     
-    parseInt(liInrHTML, 10) += parseInt(n, 10)
+    (+liInrHTML) + (+n)
   }
   return allLi
 }
